@@ -16,13 +16,20 @@
       background:hsl(185, 75%, 39%);
       } 
       .pattern-bottom-div{
-        border: 4px solid red;
+        /* border: 4px solid red; */
         text-align: right;
+        position: relative;
+        right: -200px;
+        top: -150px;
       }
       .pattern-top-div{
-        border: 4px solid yellow;
+        /* border: 4px solid yellow; */
         text-align: left;
-        margin-top: -200px;
+        /* margin-top: -200px; */
+        position: relative;
+        /* left: 30px; */
+        top: -400px;
+        left: -200px;
       }
       .card{
         background-color: white;
@@ -31,6 +38,9 @@
         /* padding: 20px; */
         border-radius: 10px;
         margin: auto;
+        margin-top: -800px;
+        position: relative;
+        z-index: 1;
       }
       .card-bg{
         width: 350px;
@@ -94,6 +104,9 @@
   </style>
 </head>
 <body>
+  <div class="pattern-top-div">
+    <img src="./images/bg-pattern-top.svg" alt="bg-pattern-top">
+  </div>
   <div class="card">
     <img class="card-bg" src="./images/bg-pattern-card.svg" alt="card-bg"><br>
     <img class="profile-pic" src="./images/image-victor.jpg" alt="profile-pic"><br>
@@ -137,8 +150,6 @@
   <div class="pattern-bottom-div">
     <img class="bg-pattern-bottom" src="./images/bg-pattern-bottom.svg" alt="bg-pattern-bottom">
   </div>
-  <div class="pattern-top-div">
-    <img src="./images/bg-pattern-top.svg" alt="bg-pattern-top">
-  </div>
+
 </body>
 </html>
